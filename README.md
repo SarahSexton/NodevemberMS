@@ -37,12 +37,12 @@ This is Nodevember, so we'll be using the Node.js of course with the Express web
 
 ### Step 1: Create a Web App in Azure
 
-The first step in creating your app is to create a web app via the Azure Portal. Azure Web Apps support Python, .NET, Java, PHP, and Node.js. 
-1. Log into the Azure Portal
- and click the NEW button in the top left corner. Click Web + Mobile > Azure Marketplace > Web Apps. 
- 
-2. Click Web + Mobile > Azure Marketplace > Web Apps 
-3. Configure the new Node app, by creating a new App Service plan and a new resource group for it. Your app name will be your sub-domain and will need to be unique. 
+The first step in creating your app is to create a web app via the Azure.com Portal. Azure Web Apps support Python, .NET, Java, PHP, and Node.js. 
+
+1. Log into the Azure Portal using your Microsoft Account (this is anything that ends in Hotmail, Live, Outlook, or signs you in to Skype, Xbox LIVE, OneDrive, or Windows Phone) and click the NEW button in the bottom left corner. Click Web App > Custom Create. 
+
+2. Configure the new Node app by creating a new App Service plan and a new resource group for it. Your app name will be your sub-domain and will need to be unique. 
+3. We recommend setting Region to Central US, No database, and check the box 
 4. Then, click Create to complete your app
 5. Click Web + Mobile > Azure Marketplace > Web Apps to show your website. Sweet. Now we have a site created, let's put something in it.
 
@@ -50,8 +50,8 @@ The first step in creating your app is to create a web app via the Azure Portal.
 
 Our goal here is to create a very simple website. You have a few options, but the simplest one is to simply fork the GitHub and clone locally:
 
-1. Fork this repo: https://github.com/dxhackers/YourNodeSite
-2. In the git console call: git clone https://github.com/<your_user_name>/YourNodeSite.git NodevemberChallenge
+1. Fork this repo: https://github.com/SarahSexton/NodevemberMS Go to that site and click the fork button at the top right. Once the fork animation is complete, you've got a copy on your account. Copy your fork's HTTP URL on the right sidebar.
+2. In the git console, call: git clone https://github.com/<your_user_name>/YourNodeSite.git NodevemberChallenge 
 3. cd NodevemberChallenge 
 
 #### Let's pause and take a look at the app structure
@@ -67,7 +67,7 @@ Our goal here is to create a very simple website. You have a few options, but th
 - .gitignore
 
 #### Files needed for Azure
-It's a very basic Node app. The following files are needed to deploy your Node application to Azure.
+It's a very basic Node app. The following files are needed to deploy your Node application to Azure:
 
 * **packages.json** - External packages needed by this application. The Azure environment will use this file to 'npm install' the packages listed in this file.
 
