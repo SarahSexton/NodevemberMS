@@ -125,7 +125,7 @@ Going back to the Azure Portal, we can now push our code to the cloud. There are
 
 ####Come by the Microsoft booth, tell us your Unique URL.azurewebsites.net address, and claim your awesome prize!!
 
-You can find additional resources and infomation about Azure deployments [here](http://blogs.msdn.com/b/sarahsays/archive/2015/08/31/building-your-first-node-js-app-and-publishing-to-azure.aspx). 
+You can find additional resources and information about Azure deployments [here](http://blogs.msdn.com/b/sarahsays/archive/2015/08/31/building-your-first-node-js-app-and-publishing-to-azure.aspx). 
 
 If you would like some help creating your site, or are looking for ideas, come by the Microsoft booth, or shoot us a tweet: 
 
