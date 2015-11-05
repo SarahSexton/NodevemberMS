@@ -99,11 +99,11 @@ Now that you've got the code on your local machine, let's run it locally.
 2. After you've saved and tested your changes, commit them to your computer's local Git repository:
  * In Git Bash:
    - **git add .**
-   - **git commit -m "Added my name as an author"**
+    - **git commit -m "Added my name as an author"**
  * In Visual Studio Code:
    - Git tab
-   - Type a commit message such as "Added my name as an author"
-   - Press Ctrl+Enter or click the check mark to commit
+    - Type a commit message such as "Added my name as an author"
+     - Press Ctrl+Enter or click the check mark to commit
 
 ### Step 5: Deploy the Web App to Azure
 
@@ -123,7 +123,7 @@ Going back to the Azure Portal, we can now push our code to the cloud. There are
  
 ## Congrats! You've just deployed your app to Azure!
 
-###Come by the Microsoft booth, tell us your Unique URL.azurewebsites.net address, and claim your awesome prize!!!
+####Come by the Microsoft booth, tell us your Unique URL.azurewebsites.net address, and claim your awesome prize!!
 
 You can find additional resources and infomation about Azure deployments [here](http://blogs.msdn.com/b/sarahsays/archive/2015/08/31/building-your-first-node-js-app-and-publishing-to-azure.aspx). 
 
