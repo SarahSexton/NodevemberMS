@@ -83,8 +83,8 @@ Now that you've got the code on your local machine, let's run it locally.
 1. Minimize your "Git Bash" window and open your "Node.js command prompt" (black square icon, not green hexagon icon)
 2. Navigate to your folder again (using "cd .." to go up, "dir" or "ls" to display the directory, and "cd <folder_name>" to change directories)
 3. The Express web framework and Socket.io are a few of the things that the Node chatroom application needs to function properly. To install the dependencies for the project through the Node Package Manager (npm), type:
-  **npm install --save express@4.10.2**
-  **npm install --save socket.io** 
+   - **npm install --save express@4.10.2**
+   - **npm install --save socket.io** 
 4. You should now be able to run the project from Node.js command prompt by typing **'node app.js'**
   * If you're using [Visual Studio Code](http://code.visualstudio.com), simply hit F5 to start the app.
   * If Windows Firewall has blocked some features of this app, you can Allow access.
@@ -98,21 +98,21 @@ Now that you've got the code on your local machine, let's run it locally.
  
 2. After you've saved and tested your changes, commit them to your computer's local Git repository:
  * In Git Bash:
-  * **git add .**
-  * **git commit -m "Added my name as an author"**
+  - **git add .**
+  - **git commit -m "Added my name as an author"**
  * In Visual Studio Code:
-  * Git tab
-  * Type a commit message such as "Added my name as an author"
-  * Press Ctrl+Enter or click the check mark to commit
+  - Git tab
+  - Type a commit message such as "Added my name as an author"
+  - Press Ctrl+Enter or click the check mark to commit
 
 ### Step 5: Deploy the Web App to Azure
 
 Going back to the Azure Portal, we can now push our code to the cloud. There are many ways to deploy code to Azure, but for now, we'll focus on using Git.
 
-1. Navigate to your web app in the portal by clicking the tile on your portal's home screen or by finding it under Browse All > Web App. Once on your web app's page, click "Dashboard." Underneath the Quick Glance section, look for the words, "Set up deployment from source control." Choose either GitHub or Local Git Repository.
+1. Navigate to your web app in the portal by clicking the tile on your portal's home screen or by finding it under Browse All > Web App. Once on your web app's page, click "Dashboard." Underneath the Quick Glance section, look for the words, **"Set up deployment from source control."** Choose either GitHub or Local Git Repository.
  
  * If you chose GitHub, simply authenticate with your Azure credentials and choose your Nodevember project. 
- * Notice that you can select branch configuration, if you want to use this for dev or staging. Azure will listen for changes on this repo and kick off a deployment any time a commit is pushed.
+  * Notice that you can select branch configuration, if you want to use this for dev or staging. Azure will listen for changes on this repo and kick off a deployment any time a commit is pushed.
  
  * If you chose Local Git Repository, an empty Git repo will be provisioned for your web app. You'll need to get the URL of this repo to add it as a remote for your local copy. Click on Settings > Properties and copy your Git URL.
     1. After you copy the URL, open up your command prompt and navigate to your local project. Add Azure as a remote and do a push.
@@ -123,11 +123,11 @@ Going back to the Azure Portal, we can now push our code to the cloud. There are
  
 ## Congrats! You've just deployed your app to Azure!
 
-Come by the Microsoft booth for your awesome prize!!!
+Come by the Microsoft booth, tell us your Unique URL.azurewebsites.net address, and claim your awesome prize!!!
 
 You can find additional resources and infomation about Azure deployments [here](http://blogs.msdn.com/b/sarahsays/archive/2015/08/31/building-your-first-node-js-app-and-publishing-to-azure.aspx). 
 
-If you would like some help creating your site, or are looking for ideas, come by the Microsoft Booth or shoot us a tweet: 
+If you would like some help creating your site, or are looking for ideas, come by the Microsoft booth, or shoot us a tweet: 
 
 Stacey Mulcahy [@bitchwhocodes](https://twitter.com/bitchwhocodes)
  | Sarah Sexton [@Saelia](https://twitter.com/Saelia)
