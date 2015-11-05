@@ -34,7 +34,7 @@ You could just skip all of these steps by forking the GitHub repo and deploying 
 ## Steps
 These steps describe how to get started running Node on Azure Web Apps.
 
-This is Nodevember, so we'll be using Node.js (of course) with the Express web framework. You will create a web app from Azure, set up deployment via local Git or GitHub, then you will run the application locally, make changes, commit, and push them to Azure. We'll show how to do this from Windows, Mac, or Linux. 
+This is Nodevember, so we'll be using Node.js (of course) with the Express web framework and Socket.io to send messages in a real-time chat room. You will create a web app from Azure, set up deployment via local Git or GitHub, then you will run the application locally, make changes, commit, and push them to Azure. We'll show how to do this from Windows, Mac, or Linux. 
 
 ### Step 1: Create a Web App in Azure
 
@@ -78,44 +78,56 @@ It's a very basic Node app. The following files are needed to deploy your Node a
 
 ### Step 3: Run the app locally
 
-Now that you've got the code on your local machine, let's run it locally. Choose instructions below to set up via the command line (Windows, Mac, or Linux) or in Visual Studio (Windows).
+Now that you've got the code on your local machine, let's run it locally.
 
 1. Minimize your "Git Bash" window and open your "Node.js command prompt" (black square icon, not green hexagon icon)
-2. Navigate to your folder again (using "cd .." to go up, "dir" or "ls" to display the directory, and "cd <folder_name>" to change directories into a folder)
-3. Type **'npm install'** to install the dependencies for the project.
-4. You should now be able to run the project by typing **'node app.js'**
+2. Navigate to your folder again (using "cd .." to go up, "dir" or "ls" to display the directory, and "cd <folder_name>" to change directories)
+3. The Express web framework and Socket.io are a few of the things that the Node chatroom application needs to function properly. To install the dependencies for the project through the Node Package Manager (npm), type:
+   - **npm install --save express@4.10.2**
+   - **npm install --save socket.io** 
+4. You should now be able to run the project from Node.js command prompt by typing **'node app.js'**
   * If you're using [Visual Studio Code](http://code.visualstudio.com), simply hit F5 to start the app.
+  * If Windows Firewall has blocked some features of this app, you can Allow access.
+  * Successful attemps will say "listening on 3000".
+  * Visit [http://localhost:3000/](http://localhost:3000/) on any web browser (with the app listening on port 3000 in the Node.js command prompt) to check out your app running locally!
+  * To stop listening, go back to the Node.js command prompt and type Ctrl+C (^C).
 
 ### Step 4: Modify with your own changes
 
-1. Open 'app.js' and modify the YOUR_INFO with your information.
+1. Open 'package.json' in your code editor and modify the YOUR_INFO description with your information.
  
-2. After you've tested your changes, commit them to the Git repository:
- * **git add .**
- * **git commit -m "Add my contact info"**
+2. After you've saved and tested your changes, commit them to your computer's local Git repository:
+ * In Git Bash:
+   - **git add .**
+    - **git commit -m "Added my name as an author"**
+ * In Visual Studio Code:
+   - Git tab
+    - Type a commit message such as "Added my name as an author"
+     - Press Ctrl+Enter or click the check mark to commit
 
 ### Step 5: Deploy the Web App to Azure
 
-Going back to the Azure Portal, we can now push our code to Azure. There are many ways to deploy code to Azure, but for now we'll focus on using Git.
+Going back to the Azure Portal, we can now push our code to the cloud. There are many ways to deploy code to Azure, but for now, we'll focus on using Git.
 
-1. Navigate to your web app in the portal by clicking the tile on your portal's home screen or by finding it under Browse All > Web App. Once on your web app's page, scroll down to the bottom to setup Continous Deployment. Choose either GitHub or Local Git Repository.
+1. Navigate to your web app in the portal by clicking the tile on your portal's home screen or by finding it under Browse All > Web App. Once on your web app's page, click "Dashboard." Underneath the Quick Glance section, look for the words, **"Set up deployment from source control."** Choose either GitHub or Local Git Repository.
  
- * If you chose GitHub, simply authenticate with your Azure credentials and choose your Nodevember project. Notice that you can select branch configuration as well if you want to use this for dev or staging. Azure will listen for changes on this repo and kick off a deployment anytime a commit is pushed.
+ * If you chose GitHub, simply authenticate with your Azure credentials and choose your Nodevember project. 
+   - Notice that you can select branch configuration, if you want to use this for dev or staging. Azure will listen for changes on this repo and kick off a deployment any time a commit is pushed.
  
  * If you chose Local Git Repository, an empty Git repo will be provisioned for your web app. You'll need to get the URL of this repo to add it as a remote for your local copy. Click on Settings > Properties and copy your Git URL.
     1. After you copy the URL, open up your command prompt and navigate to your local project. Add Azure as a remote and do a push.
-    2. git remote add azure YOUR_GIT_URL
-    3. git push azure master
+    2. **git remote add azure https://YOUR_GIT_URL**
+    3. **git push azure master**
 
-3. No matter which method you chose, Azure will have grabbed the latest version of your web app and started the deployment. You can always see the status of deployments and view the log. Go ahead and take a look. You'll see that Azure figured out that this is a Node project, detected which Node runtime to use, installed a virtual enviroment, npm installed Express from packages.json, collected static files, and more.
+3. No matter which method you chose, Azure will have grabbed the latest version of your web app and started the deployment. You can always see the status of deployments and view the log. Go ahead and take a look! You'll see that Azure figured out that this is a Node project, detected which Node runtime to use, and installed a virtual enviroment. The Node Package manager installed Express and Socket.io from package.json, collected static files, and more!
  
 ## Congrats! You've just deployed your app to Azure!
 
-Come by the Microsoft booth for your awesome trucker hat.
+####Come by the Microsoft booth, tell us your Unique URL.azurewebsites.net address, and claim your awesome prize!!
 
-You can find additional resources and infomation about Azure deployments here. 
+You can find additional resources and infomation about Azure deployments [here](http://blogs.msdn.com/b/sarahsays/archive/2015/08/31/building-your-first-node-js-app-and-publishing-to-azure.aspx). 
 
-If you would like some help creating your site or are looking for ideas come by the Microsoft Booth or shoot us a tweet: 
+If you would like some help creating your site, or are looking for ideas, come by the Microsoft booth, or shoot us a tweet: 
 
 Stacey Mulcahy [@bitchwhocodes](https://twitter.com/bitchwhocodes)
  | Sarah Sexton [@Saelia](https://twitter.com/Saelia)
