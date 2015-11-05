@@ -43,7 +43,7 @@ The first step in creating your app is to create a web app via the [Azure.com Po
 1. Log into the Azure Portal using your Microsoft Account (this is anything that ends in Hotmail, Live, Outlook, or signs you in to Skype, Xbox LIVE, OneDrive, or Windows Phone) and click the NEW button in the bottom left corner. 
  * If you see the “No subscriptions found” page, you can either:
    - Sign up for a free trial using the Sign up for Windows Azure link
-   - Go get a free $100 Azure pass from the Microsoft booth.
+    - Go get a free $100 Azure pass from the Microsoft booth.
 
 2. Click Web App > Custom Create. Configure the new Node app by creating a new App Service Plan, but no database is necessary. Your app name will be your sub-domain and will need to be unique. 
 
@@ -59,38 +59,31 @@ Our goal here is to create a very simple website. You have a few options, but th
 
 1. Fork this repo: https://github.com/SarahSexton/NodevemberMS (Go to that site and click the fork button at the top right. Once the fork animation is complete, you've got a copy on your account. Copy your fork's HTTP URL on the right sidebar.)
 2. In [Git Bash](opensourcerer.diy.org/challenge/3), navigate to a directory where you want to save the GitHub folders (using "cd .." to go up, "dir" to display the directory, "mkdir" to make a new directory folder, and "cd <folder_name>" to change directories into a folder).
-3. Clone the repository onto your computer. It will create a new folder for the repository, so no need to create one. But make sure you aren't cloning it inside of another Git repository folder! You can leave the folder you're in (and be in the folder that it was inside of) by 'changing directory' with two dots: 'cd ..'
-4. Type: 'git clone https://github.com/<YOUR_USERNAME>/NodevemberMS.git' 
+3. Clone the repository onto your computer. It will create a new folder for the repository, so no need to create one. But make sure you aren't cloning it inside of another Git repository folder! You can leave the folder you're in (and be in the folder that it was inside of) by "changing directory" with two dots: "cd .."
+4. Type: **'git clone https://github.com/'YOUR_USERNAME'/NodevemberMS.git'**
 5. Go into the folder for the fork it created (in this case, named 'NodevemberMS') with 'cd NodevemberMS'
 6. Now you've got a copy of the repository on your computer and it is automatically connected to the remote repository (your forked copy) on your GitHub account.
 
 #### Let's pause and take a look at the app structure:
-- public
-    - default.html
-    - default.js
-    - default.css
+(Type "dir" or "ls" to list the elements found in the folder.)
+- index.html
 - app.js
 - package.json
-- readme.md
-- .deployment
-- deploy.cmd
-- .gitignore
+- README.md
 
 #### Files needed for Azure
 It's a very basic Node app. The following files are needed to deploy your Node app to Azure:
 
 * **package.json** - External packages needed by this application. The Azure environment will use this file to **'npm install'** the packages listed in this file.
 
-* **.deployment and deploy.cmd** - These aren't actually needed here, because we're not doing anything that requires a custom deployment script, but we've included them so you can understand what the build environment ([Kudu](https://github.com/projectkudu/kudu)) is doing once it determines this is a Node app.
+### Step 3: Run the app locally
 
-### Step 3: Create virtual environment
+Now that you've got the code on your local machine, let's run it locally. Choose instructions below to set up via the command line (Windows, Mac, or Linux) or in Visual Studio (Windows).
 
-Now that you've got the code on your local machine, let's run it localy. Choose instructions below to set up via the command line (Windows, Mac, or Linux) or in Visual Studio (Windows).
-
-1. Open your Node.js console
-2. Navigate to your folder (using "cd .." to go up, "dir" to display the directory, and "cd <folder_name>" to change directories into a folder)
-3. type **'npm install'** to install the dependencies for the project 
-4. You should now be able to run project by typing **'node app.js'**
+1. Minimize your "Git Bash" window and open your "Node.js command prompt" (black square icon, not green hexagon icon)
+2. Navigate to your folder again (using "cd .." to go up, "dir" or "ls" to display the directory, and "cd <folder_name>" to change directories into a folder)
+3. Type **'npm install'** to install the dependencies for the project.
+4. You should now be able to run the project by typing **'node app.js'**
   * If you're using [Visual Studio Code](http://code.visualstudio.com), simply hit F5 to start the app.
 
 ### Step 4: Modify with your own changes
