@@ -1,6 +1,9 @@
 {
-  "name": "socket-chat-example",
+  "name": "Nodevember-chat-example",
   "version": "0.0.1",
-  "description": "my first socket.io app",
+  "description": "Nodevember Challenge Node.js & Socket.io app",
+  "author": {
+    "name": "YOUR_INFO"
+  },
   "dependencies": {}
 }
