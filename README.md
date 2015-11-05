@@ -28,13 +28,13 @@ You could just skip all of these steps by forking the GitHub repo and deploying 
  * We use "[Visual Studio Code](https://code.visualstudio.com/)": it's free, cross-platform, a lightweight 5-minute download, and great for Node debugging. You can also use Sublime Text, Vim, Notepad++ or any editor of choice.
 * [Node.js](https://nodejs.org/en/) runtime and tools installed
 * [GitHub.com](http://github.com) account created
-* [Git](http://git-scm.com/) version control and tools (Terminal and Git Bash) installed 
+* [Git](http://git-scm.com/) version control and tools (Git Bash) installed 
 * Windows, Mac, or Linux OS
 
 ## Steps
-These steps describe how to get started running Node on Azure Web Apps.
+These steps describe how to get started running Node on Azure web apps.
 
-This is Nodevember, so we'll be using Node.js (of course) with the Express web framework and Socket.io to send messages in a real-time chat room. You will create a web app from Azure, set up deployment via local Git or GitHub, then you will run the application locally, make changes, commit, and push them to Azure. We'll show how to do this from Windows, Mac, or Linux. 
+This is Nodevember, so we'll be using Node.js (of course!) with the Express web framework and Socket.io to send messages in a real-time chat room. You will create a web app from Azure, set up deployment via local Git or GitHub, then you will run the application locally, make changes, commit, and push them to Azure. We'll show how to do this from Windows, Mac, or Linux. 
 
 ### Step 1: Create a Web App in Azure
 
@@ -53,7 +53,7 @@ The first step in creating your app is to create a web app via the [Azure.com Po
 
 5. Once your Web App has finished loading, click its URL to show your website. (Alternatively, click its name > Dashboard > URL). Your web app has been successfully created! Sweet. Now that we have a site, let's put something in it.
 
-### Step 2: Clone the Nodevember Challenge repo and run locally
+### Step 2: Clone the NodevemberMS repo and run locally
 
 Our goal here is to create a very simple website. You have a few options, but the simplest one is to simply fork the GitHub and clone locally:
 
