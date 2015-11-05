@@ -27,8 +27,9 @@ You could just skip all of these steps by forking the GitHub repo and deploying 
 * A code editor
  * We use "[Visual Studio Code](https://code.visualstudio.com/)": it's free, cross-platform, a lightweight 5-minute download, and great for Node debugging. You can also use Sublime Text, Vim, Notepad++ or any editor of choice.
 * [Node.js](https://nodejs.org/en/) runtime and tools installed
-* [GitHub](http://github.com) account created and/or Git
-* Windows, Mac, or Linux Operating System
+* [GitHub.com](http://github.com) account created
+* [Git](http://git-scm.com/) version control and tools (Terminal and Git Bash) installed 
+* Windows, Mac, or Linux OS
 
 ## Steps
 These steps describe how to get started running Node on Azure Web Apps.
@@ -41,8 +42,8 @@ The first step in creating your app is to create a web app via the [Azure.com Po
 
 1. Log into the Azure Portal using your Microsoft Account (this is anything that ends in Hotmail, Live, Outlook, or signs you in to Skype, Xbox LIVE, OneDrive, or Windows Phone) and click the NEW button in the bottom left corner. 
  * If you see the “No subscriptions found” page, you can either:
-  *sign up for a free trial using the Sign up for Windows Azure link
-  *Go get a free $100 Azure pass from the Microsoft booth.
+   - Sign up for a free trial using the Sign up for Windows Azure link
+   - Go get a free $100 Azure pass from the Microsoft booth.
 
 2. Click Web App > Custom Create. Configure the new Node app by creating a new App Service Plan, but no database is necessary. Your app name will be your sub-domain and will need to be unique. 
 
@@ -56,9 +57,12 @@ The first step in creating your app is to create a web app via the [Azure.com Po
 
 Our goal here is to create a very simple website. You have a few options, but the simplest one is to simply fork the GitHub and clone locally:
 
-1. Fork this repo: https://github.com/SarahSexton/NodevemberMS Go to that site and click the fork button at the top right. Once the fork animation is complete, you've got a copy on your account. Copy your fork's HTTP URL on the right sidebar.
-2. In the git console, call: git clone https://github.com/SarahSexton/NodevemberMS.git NodevemberChallenge 
-3. cd NodevemberChallenge 
+1. Fork this repo: https://github.com/SarahSexton/NodevemberMS (Go to that site and click the fork button at the top right. Once the fork animation is complete, you've got a copy on your account. Copy your fork's HTTP URL on the right sidebar.)
+2. In [Git Bash](opensourcerer.diy.org/challenge/3), navigate to a directory where you want to save the GitHub folders (using "cd .." to go up, "dir" to display the directory, "mkdir" to make a new directory folder, and "cd <folder_name>" to change directories into a folder).
+3. Clone the repository onto your computer. It will create a new folder for the repository, so no need to create one. But make sure you aren't cloning it inside of another Git repository folder! You can leave the folder you're in (and be in the folder that it was inside of) by 'changing directory' with two dots: 'cd ..'
+4. Type: 'git clone https://github.com/<YOUR_USERNAME>/NodevemberMS.git' 
+5. Go into the folder for the fork it created (in this case, named 'NodevemberMS') with 'cd NodevemberMS'
+6. Now you've got a copy of the repository on your computer and it is automatically connected to the remote repository (your forked copy) on your GitHub account.
 
 #### Let's pause and take a look at the app structure:
 - public
