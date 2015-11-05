@@ -89,7 +89,7 @@ Now that you've got the code on your local machine, let's run it locally.
   * If you're using [Visual Studio Code](http://code.visualstudio.com), simply hit F5 to start the app.
   * If Windows Firewall has blocked some features of this app, you can Allow access.
   * Successful attemps will say "listening on 3000".
-  * Visit [http://localhost:3000/](http://localhost:3000/) on any web browser (with the app listening on port 3000 in the Node.js command prompt) to check out your app running locally!
+  * Visit [http://localhost:3000/](http://localhost:3000/) on any web browser (with the app listening on port 3000 in the Node.js command prompt) to check out your app running locally! Go ahead, type some messages! Go nuts!
   * To stop listening, go back to the Node.js command prompt and type Ctrl+C (^C).
 
 ### Step 4: Modify with your own changes
@@ -104,6 +104,11 @@ Now that you've got the code on your local machine, let's run it locally.
    - Git tab
     - Type a commit message such as "Added my name as an author"
      - Press Ctrl+Enter or click the check mark to commit
+3. Your branch is now ahead of 'origin/master' by 1 commit. Use "git push" to publish your local commits.
+ * **git push origin master**
+ * Username for 'https://github.com': YOUR_USERNAME
+ * Password for 'https://YOUR_USERNAME@github.com': *******
+ 4. Your branch can now be up-to-date with 'origin/master' with nothing to commit and a clean working directory.
 
 ### Step 5: Deploy the Web App to Azure
 
