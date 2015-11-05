@@ -124,7 +124,9 @@ Going back to the Azure Portal, we can now push our code to the cloud. There are
     2. **git remote add azure https://YOUR_GIT_URL**
     3. **git push azure master**
 
-3. No matter which method you chose, Azure will have grabbed the latest version of your web app and started the deployment. You can always see the status of deployments and view the log. Go ahead and take a look! You'll see that Azure figured out that this is a Node project, detected which Node runtime to use, and installed a virtual enviroment. The Node Package manager installed Express and Socket.io from package.json, collected static files, and more!
+2. No matter which method you chose, Azure will have grabbed the latest version of your web app and started the deployment. You'll see that Azure figured out that this is a Node project, detected which Node runtime to use, and installed a virtual enviroment. The Node Package manager installed Express and Socket.io from package.json, collected static files, etc.
+
+3. **You will need to enable Web Sockets from the "Configure" tab of the Azure Portal.**
  
 ## Congrats! You've just deployed your app to Azure!
 
