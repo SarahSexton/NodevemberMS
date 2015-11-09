@@ -86,14 +86,14 @@ It's a very basic Node app. The following files are needed to deploy your Node a
 2. After you've saved and tested your changes, commit them to your computer's local Git repository and then push to your master
    - **git add .**
    - **git commit -am "Added my name as an author"**
-   - **git push origin master
+   - **git push origin master**
  
 
 ### Step 4: Deploy the Web App to Azure
 
 Going back to the Azure Portal, we can now push our code to the cloud. There are many ways to deploy code to Azure, but for now, we'll focus on using Git.
 
-1. Navigate to your web app in the portal by clicking the tile on your portal's home screen or by finding it under Browse All > Web App. Once on your web app's page, click "Dashboard." Underneath the Quick Glance section, look for the words, **"Set up deployment from source control."** Choose either GitHub.
+1. Navigate to your web app in the portal by clicking the tile on your portal's home screen or by finding it under Browse All > Web App. Once on your web app's page, click "Dashboard." Underneath the Quick Glance section, look for the words, **"Set up deployment from source control."** Choose  GitHub.
  * Authenticate with your Github credentials and choose your Nodevember project. 
    - Notice that you can select branch configuration, if you want to use this for dev or staging. Azure will listen for changes on this repo and kick off a deployment any time a commit is pushed.
    - You'll see that Azure figured out that this is a Node project, detected which Node runtime to use, and installed a virtual enviroment. The Node Package manager installed Express and Socket.io from package.json, collected static files, etc.
