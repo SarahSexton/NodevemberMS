@@ -1,6 +1,7 @@
 # Nodevember Azure Code Challenge
  
-![Nodevember logo]('CodeChallenge.png')
+ ![Nodevember Logo](/images/logo.png)
+
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
  
 ## Deploy your Node web apps on Azure
