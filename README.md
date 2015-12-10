@@ -22,7 +22,7 @@ Microsoft Azure offers a wide array of creation, continous deployment and manage
 You could just skip all of these steps by forking this GitHub repo and deploying the app using the easy "Deploy to Azure" button. 
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
- We get it. You're busy eating [hot chicken](https://www.thrillist.com/eat/nashville/nashville-s-best-hot-chicken-restaurants), making new Node friends, and catching up with old ones. We won't hold it against you and you still get the cool Trucker Hat. But that's not much of a challenge, now, is it?
+We get it. You're busy eating [hot chicken](https://www.thrillist.com/eat/nashville/nashville-s-best-hot-chicken-restaurants), making new Node friends, and catching up with old ones. We won't hold it against you and you still get the cool Trucker Hat. But that's not much of a challenge, now, is it?
 
 ## Prerequisites
 
